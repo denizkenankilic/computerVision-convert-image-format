@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-inputPath = r'\\aerosrv2\e$\processed\WPAFB-21Oct2009\Data\TRAIN_SELF-TEST_SELF-EVAL\stabilized_croped_stabilized_cropped\AOI_41\tracked'
+inputPath = r'\\example_path_1\example_path_2' # Edit this line to define your path
 
 def convertImageFormat(fromFormat,toFormat):
     outputPath = inputPath + '/tracked_'+ toFormat
@@ -14,6 +14,3 @@ def convertImageFormat(fromFormat,toFormat):
                 Image.open(os.path.join(inputPath,fname)).save(os.path.join(outputPath,os.path.splitext(fname)[0]+'.',toFormat))
 
 convertImageFormat('jpg','bmp')
-
-
-
