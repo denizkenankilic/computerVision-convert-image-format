@@ -4,7 +4,7 @@ import os
 inputPath = r'\\example_path_1\example_path_2' # Edit this line to define your path
 
 def convertImageFormat(fromFormat,toFormat):
-    outputPath = inputPath + '/tracked_'+ toFormat
+    outputPath = inputPath + '/example_'+ toFormat
     if not os.path.exists(outputPath):
         os.makedirs(outputPath)
 
